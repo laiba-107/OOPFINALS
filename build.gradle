@@ -13,29 +13,36 @@ java {
     }
 }
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-    implementation 'org.springframework.boot:spring-boot-starter-graphql'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    // Spring Boot Starter Dependencies
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'   // JPA for database
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'  // RESTful APIs
+    implementation 'org.springframework.boot:spring-boot-starter-graphql'    // GraphQL support
+    implementation 'org.springframework.boot:spring-boot-starter-web'        // MVC-based web apps
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'    // Reactive web apps
+
+    // Lombok for reducing boilerplate code
     compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // Developer tools for hot reloading
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // Testing dependencies
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'io.projectreactor:reactor-test'
-    testImplementation 'org.springframework.graphql:spring-graphql-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'io.projectreactor:reactor-test'                      // Reactor for reactive streams testing
+    testImplementation 'org.springframework.graphql:spring-graphql-test'     // GraphQL testing
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'             // JUnit runtime
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
 }
 
 tasks.named('test') {
