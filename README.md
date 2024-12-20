@@ -6,6 +6,8 @@ This is a Spring Boot project created for the OOP Final Paper. The application i
  Event.java
 ![image](https://github.com/user-attachments/assets/1268c77a-312d-40ad-8174-f8d65373b31b)
 
+# Database used:
+![image](https://github.com/user-attachments/assets/147fd007-b043-4cbd-a6b7-b173df8cccc6)
 
 ## Project Overview
 The application allows users to:
