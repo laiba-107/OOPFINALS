@@ -3,24 +3,9 @@
 This is a Spring Boot project created for the OOP Final Paper. The application implements an Event Management System that provides REST API endpoints for managing events and tracking attendance. 
 
 # Project Structure
-src/
-├── main/
-│   ├── java/
-│   │   └── com.example.oopfinalpaper/
-│   │       ├── controller/
-│   │       │   └── EventController.java
-│   │       ├── dto/
-│   │       │   └── EventDTO.java
-│   │       ├── model/
-│   │       │   └── Event.java
-│   │       ├── repository/
-│   │       │   └── EventRepository.java
-│   │       └── service/
-│   │           └── EventService.java
-│   └── resources/
-│       ├── application.properties
-│       └── static/
-└── test/
+ Event.java
+![image](https://github.com/user-attachments/assets/1268c77a-312d-40ad-8174-f8d65373b31b)
+
 
 ## Project Overview
 The application allows users to:
