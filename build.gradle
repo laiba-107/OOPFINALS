@@ -19,24 +19,26 @@ repositories {
 
 dependencies {
     // Spring Boot Starter Dependencies
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'   // JPA for database
-    implementation 'org.springframework.boot:spring-boot-starter-data-rest'  // RESTful APIs
-    implementation 'org.springframework.boot:spring-boot-starter-graphql'    // GraphQL support
-    implementation 'org.springframework.boot:spring-boot-starter-web'        // MVC-based web apps
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'    // Reactive web apps
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    implementation 'org.springframework.boot:spring-boot-starter-graphql'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-    // Lombok for reducing boilerplate code
+    // H2 Database
+    implementation 'com.h2database:h2:2.1.214'
+
+    // Lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    // Developer tools for hot reloading
+    // Developer Tools
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
-    // Testing dependencies
+    // Testing
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'io.projectreactor:reactor-test'                      // Reactor for reactive streams testing
-    testImplementation 'org.springframework.graphql:spring-graphql-test'     // GraphQL testing
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'             // JUnit runtime
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation 'org.springframework.graphql:spring-graphql-test'
 }
 
 configurations {
