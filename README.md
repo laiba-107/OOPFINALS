@@ -2,12 +2,16 @@
 
 This is a Spring Boot project created for the OOP Final Paper. The application implements an Event Management System that provides REST API endpoints for managing events and tracking attendance. 
 
+# Deployment
+Deployment was not possible becuase the Render was asking for node.js file for the deployment and spring boot (Java) doesnot give node.js files.
+
 # Project Structure
  Event.java
 ![image](https://github.com/user-attachments/assets/1268c77a-312d-40ad-8174-f8d65373b31b)
 
 # Database used:
 ![image](https://github.com/user-attachments/assets/147fd007-b043-4cbd-a6b7-b173df8cccc6)
+
 
 ## Project Overview
 The application allows users to:
