@@ -22,6 +22,8 @@ The application allows users to:
 - Generate event reports for organizers.
 
 ## Output
+![image](https://github.com/user-attachments/assets/c0cd3b64-4e69-4bcc-99e4-1e465b969f14)
+
 - The application successfully runs with the H2 in-memory database.
 - REST API endpoints for managing events and users work as expected.
 - The application outputs the expected data for event management.
